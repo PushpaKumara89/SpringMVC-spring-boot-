@@ -12,27 +12,14 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
     @RequestMapping("/")
     public String home(){
-        return "index.jsp";
+        return "index";
     }
-
-    /*@RequestMapping("add")
-    public String add(HttpServletRequest req){
-        int i = Integer.parseInt(req.getParameter("num1"));
-        int j = Integer.parseInt(req.getParameter("num2"));
-
-        int sum = i+j;
-        HttpSession session = req.getSession();
-
-        session.setAttribute("sum", sum);
-        return "result.jsp";
-    }*/
-
     @RequestMapping("add")
     public ModelAndView add(@RequestParam("num1") int i, @RequestParam("num2") int j){
         int sum = i+j;
 
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("result.jsp");
+        mv.setViewName("result");
         mv.addObject("sum", sum);
 
         return mv;
