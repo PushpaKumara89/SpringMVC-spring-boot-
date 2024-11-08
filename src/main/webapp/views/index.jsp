@@ -11,13 +11,13 @@
 <body>
     <h1> Welcome to APPK</h1>
 
-    <form action="add">
-        Enter 1st number : <label>
-            <input type="text" name="num1" >
+    <form action="addAlien">
+        Enter Your Id : <label>
+            <input type="text" name="aid" >
         </label><br>
         <label>
-            Enter 2nd number :
-            <input type="text" name="num2" >
+            Enter your name :
+            <input type="text" name="aname" >
         </label><br>
         <input type="submit">
     </form>
