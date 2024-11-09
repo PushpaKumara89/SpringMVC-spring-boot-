@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HomeController {
+
+    @ModelAttribute
+    public void modelData(Model m){
+        m.addAttribute("name", "Alien");
+    }
     @RequestMapping("/")
     public String home(){
         return "index";
@@ -22,10 +27,10 @@ public class HomeController {
     }
 
     @RequestMapping("addAlien")
-    public String addAlien(@ModelAttribute("a1") Alien a){
+    public String addAlien(@ModelAttribute Alien a){
 
         return "result";
     }
 }
 
-// ModelAttribute
+// ModelAttribute       02.48.02

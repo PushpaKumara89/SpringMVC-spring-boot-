@@ -11,6 +11,8 @@
     <title>Result</title>
 </head>
 <body>
-    Result is : ${a1}
+    Result is : ${alien}
+
+    Welcome back ${name}
 </body>
 </html>
