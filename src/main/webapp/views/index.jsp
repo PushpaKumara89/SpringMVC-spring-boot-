@@ -11,7 +11,7 @@
 <body>
     <h1> Welcome to APPK</h1>
 
-    <form action="addAlien">
+    <form action="addAlien" method="post">
         Enter Your Id : <label>
             <input type="text" name="aid" >
         </label><br>
